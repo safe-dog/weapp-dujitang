@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://www.w7.cc" versionCode="">
+	
+	<application setting='false'>
+		<name><![CDATA[毒鸡汤小程序]]></name>
+
+		<identifie><![CDATA[weapp_dujitang]]></identifie>
+
+		<version><![CDATA[1.0.0]]></version>
+
+		<ability><![CDATA[dev]]></ability>
+
+		<type><![CDATA[activity]]></type>
+
+		<description><![CDATA[简洁、美观的毒鸡汤小程序，用户进入，随机显示一条毒鸡汤（内置1000+条数据），并可进行转发、分享海报、设置广告等操作]]></description>
+
+		<author><![CDATA[vPush]]></author>
+
+		<url><![CDATA[]]></url>
+
+		<setting><![CDATA[]]></setting>
+
+	</application>
+
+	
+	<platform>
+		<rule embed="false" />
+
+		<rule embed="false" />
+
+	<supports>
+
+			<item type="wxapp" />
+	</supports>
+
+	</platform>
+
+	
+	<bindings>
+
+		<menu>
+			<entry title="程序配置" do="setting" state="" direct="false" icon="fa fa-cog" />
+			<entry title="联系我们" do="contact" state="" direct="false" icon="fa fa-wechat" />
+		</menu>
+
+		<page>
+		</page>
+
+	</bindings>
+
+	<install><![CDATA[install.php]]></install>
+	<uninstall><![CDATA[]]></uninstall>
+	<upgrade><![CDATA[]]></upgrade>
+</manifest>

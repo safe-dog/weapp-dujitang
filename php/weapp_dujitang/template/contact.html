@@ -1,0 +1,61 @@
+{template 'common/header'}
+
+<div class="jumbotron">
+  <h2>联系我们</h2>
+  <p>需要更多帮助，请通过如下方式联系我们</p>
+</div>
+
+<div class="row">
+  
+  <div class="col-xs-12 col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-heading"><i class="fa fa-info-circle"></i> 当前小程序信息</div>
+      <div class="panel-body">
+        <div class="alert alert-success">
+          <b>siteInfo.js => acid & uniacid</b>
+          <br />
+          <code>{$_W["account"]["acid"]}</code>
+        </div>
+        <div class="alert alert-info">
+          <b>AppId：</b>
+          <br />
+          <code>{$_W["account"]["key"]}</code>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="col-xs-12 col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-heading"><i class="fa fa-wechat"></i> 技术支持微信</div>
+      <div class="panel-body">
+        <img src="{MODULE_URL}images/wechat.jpg" alt="" srcset="">
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-xs-12 col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-heading"><i class="fa fa-wechat"></i> 小程序黑科技研发公众号（古人云）</div>
+      <div class="panel-body">
+        <img src="{MODULE_URL}images/gurenyun.jpg" alt="" srcset="">
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<style>
+.one-links-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.one-links-body > a {
+  margin-bottom: 10px;
+}
+</style>
+
+{template 'common/footer'}

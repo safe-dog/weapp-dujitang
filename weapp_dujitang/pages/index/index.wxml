@@ -1,0 +1,14 @@
+<view class="body" bindlongpress="copyHandler">
+	<text wx:if="{{dujitang !== null}}">{{dujitang.content}}</text>
+</view>
+
+<view class="buttons">
+	<button open-type="share">转发</button>
+	<button style="color:#f44336" bindtap="loadData">再来一碗</button>
+	<button bindtap="haibaoHandler">海报</button>
+</view>
+
+<!-- 底部广告 -->
+<view class="ad-box" wx:if="{{ad}}">
+	<ad class="ad" unit-id="{{ad}}"></ad>
+</view>
